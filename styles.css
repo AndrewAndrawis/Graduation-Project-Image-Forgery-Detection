@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html{
+    height: 100%;
+    padding:0;
+    margin:0;
+}
+
+body{
+    
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+    background-color: rgba(72, 144, 253, 0.2);
+    padding:0;
+    margin:0;
+}
+
+.titlediv{
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #06416f;
+    color: #fff;
+}
+
+.title{
+    margin: auto;
+    size: 28px;
+}
+
+.content{
+    display:flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content:center;
+    width: 75%;
+    margin:auto;
+    gap: 50px;
+    
+}
+
+.card {
+    
+    border: 1px solid #ccc;
+    flex: 0 0 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    text-align: center;
+    
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    
+    
+  }
+  .card img{
+    max-width:100%;
+    height:20vw;
+    object-fit: cover;
+    
+
+}
+
+.form-submit-button {
+	background: #2f80c3;
+	color: #fff;
+  font-size:15px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+  padding:5px;
+  width:100px;
+  height:50px;
+  font-family: 'Roboto', sans-serif;
+  
+  transition: 0.3s ease-in-out
+ 
+}
+
+.form-submit-button:hover {
+
+	background: #06416f;
+	color: #fff;
+	border: 1px solid #eee;
+	
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}

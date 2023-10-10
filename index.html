@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="titlediv">
+    <h1 class="title">Image Forgery Detection</h1>
+    </div>
+    <div class="content">
+    <div class="card">
+        <img src="static\retina_1708x683_cover-0323-MachineLearning_Dan_Newsletter-b21703f41d807514083e297955e1b46d.png" alt="machine learning">
+        <div class="container">
+        <h1>Machine Learning</h1>
+        <form action="/mlupload" enctype="multipart/form-data" method="POST">
+        <input type = "file" name = "img"  class="choose-file"/>
+        <input type = "submit" class="form-submit-button"/>
+     </form>
+     <br>
+     {{ml_prediction}}   
+        </div>  
+    </div>
+    <div class="card">
+        <img src="static\AI-artificial-intelligence-brain-deep-learning.png" alt="deep learning">
+        <div class="container">
+        <h1>Resnet50(Splicing)</h1>
+        <form action="/r5upload" enctype="multipart/form-data" method="POST">
+            <input type = "file" name = "img"  class="choose-file"/>
+            <input type = "submit" class="form-submit-button"/>
+            
+         </form>
+        </div>
+        <br>
+     {{r5_prediction}}
+     <img src="{{image_url}}">
+    </div>
+    <div class="card">
+        <img src="static\AI-artificial-intelligence-brain-deep-learning.png" alt="deep learning">
+        <div class="container">
+        <h1>InceptionV3(Copy-Move)</h1>
+        <form action="/v3upload" enctype="multipart/form-data" method="POST">
+            <input type = "file" name = "img"  class="choose-file"/>
+            <input type = "submit" class="form-submit-button"/>
+            
+         </form>
+        </div>
+        <br>
+     {{v3_prediction}}
+     <img src="{{image_url}}">
+    </div>
+    
+    <div class="card">
+        <img src="static\aiface.png" alt="deep learning">
+        <div class="container">
+        <h1>AI Face Detection</h1>
+        <form action="/aiupload" enctype="multipart/form-data" method="POST">
+            <input type = "file" name = "img"  class="choose-file"/>
+            <input type = "submit" class="form-submit-button"/>
+            
+         </form>
+        </div>
+        <br>
+     {{ai_prediction}}
+     <img src="{{image_url}}">
+    </div>
+</div>
+    
+</body>
+</html>
